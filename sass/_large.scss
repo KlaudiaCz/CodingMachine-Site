@@ -1,0 +1,261 @@
+@use './colors' as *;
+
+@media (min-width: 992px) {
+	.hamburger {
+		display: none;
+	}
+	.navigation {
+		&__desktop {
+			position: absolute;
+			display: flex;
+		}
+	}
+
+	.section-title {
+		font-size: 4.2rem;
+	}
+
+	.header {
+		&__title {
+			margin: 0.8em 1.2em;
+			font-size: 3.4rem;
+		}
+		&__left {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			grid-column: 1/2;
+			grid-row: 2/3;
+			text-align: right;
+
+			h1 {
+				padding-left: 1em;
+				font-size: 6rem;
+			}
+
+			p {
+				margin-top: 1em;
+				font-size: 2.5rem;
+			}
+		}
+		&__right {
+			grid-column: 2/3;
+			grid-row: 2/3;
+			text-align: right;
+
+			&-btn {
+				padding: 2rem 8rem;
+				border-radius: 30px;
+			}
+		}
+
+		&__arrow {
+			display: flex;
+		}
+
+		.custom-shape-divider-bottom-1707412821 svg {
+			display: block;
+		}
+	}
+
+	.aboutme {
+		&__info {
+			flex-direction: row;
+
+			img {
+				width: 450px;
+			}
+
+			&-text {
+				padding: 2.3em;
+			}
+		}
+
+		.two {
+			img {
+				order: 2;
+			}
+		}
+	}
+
+	.services {
+		background-image: url('../img/safar-safarov-MSN8TFhJ0is-unsplash\ \(1\)-modified.jpg');
+
+		&__box {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			&-card {
+				width: 300px;
+				height: 300px;
+
+				h2 {
+					font-size: 2rem;
+				}
+
+				a {
+					padding: 1em;
+					bottom: 50px;
+					font-size: 1.4rem;
+					letter-spacing: 1px;
+				}
+			}
+		}
+
+		.one {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+		.two {
+			grid-column: 3/4;
+			grid-row: 1/2;
+		}
+		.three {
+			grid-column: 4/5;
+			grid-row: 1/2;
+		}
+		.four {
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+		.five {
+			grid-column: 3/4;
+			grid-row: 2/3;
+		}
+		.six {
+			grid-column: 4/5;
+			grid-row: 2/3;
+		}
+	}
+
+	.portfolio {
+		&__box {
+			&-text {
+				h3 {
+					font-size: 2rem;
+				}
+
+				p {
+					font-size: 1.3rem;
+				}
+
+				hr {
+					margin-top: 1em;
+					width: 90%;
+				}
+			}
+		}
+
+		.slick-prev,
+		.slick-next {
+			margin: 1em;
+			font-size: 3rem;
+			background: none;
+			border: transparent;
+		}
+	}
+
+	.contact {
+		&__box {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 1fr;
+
+			&-info {
+				width: 300px;
+				grid-column: 1/2;
+				grid-row: 1/2;
+			}
+
+			&-form {
+				grid-column: 2/3;
+				grid-row: 1/2;
+				width: 500px;
+				form {
+					width: 500px;
+
+					input,
+					textarea {
+						width: 400px;
+					}
+
+					textarea {
+						max-width: 400px;
+					}
+				}
+			}
+		}
+	}
+
+	.promo {
+		height: 350px;
+		position: relative; 
+	
+		&__img {
+			position: relative;
+			z-index: 0;
+			width: 100%;
+			height: 100%; 
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	
+		&__shadow {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%; 
+			background-color: $second-alfa;
+			z-index: 1; 
+		}
+	}
+
+	.footer {
+		padding-top: 3em;
+		&__box {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			&-one {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				grid-column: 1/2;
+				grid-row: 1/2;
+			}
+
+			&-two {
+				grid-column: 2/3;
+				grid-row: 1/2;
+				display: flex;
+				font-size: 1.4rem;
+			}
+
+			&-three {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				grid-column: 3/4;
+				grid-row: 1/2;
+
+				h2 {
+					font-size: 2.3rem;
+				}
+
+				form {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+
+		}
+	}
+}
