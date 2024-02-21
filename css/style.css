@@ -126,7 +126,7 @@ hr {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   height: 100vh;
-  background-image: url("/img/kl_14.jpg");
+  background-image: url("img/kl_14.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
